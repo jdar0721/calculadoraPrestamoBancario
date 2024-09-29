@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+    <script src="/index.js"></script>
+
+    <div class="contenedor">
+        <h2>Calculadora de prestámos bancarios</h2>
+        <label for="monto">Monto del préstamo:</label> <br>
+        <input type="number" id="monto" placeholder="Ingrese el monto del préstamo">
+        <br>
+        <label for="Tipoprestamo" >Tipo de préstamo que desea:</label> <br>
+        <select  id="Tipoprestamo"  >
+
+        <option value="1">Préstamo personal ( 5% anual, hasta 5 años de plazo)</option>
+        <option value="2">Préstamo para vivienda ( 3% anual, hasta 20 años de plazo)</option>
+        <option value="3">Préstamo para automóvil ( 4% anual, hasta 7 años)</option>
+        </select><br>
+        <label for="plazo">Plazo:</label><br>
+        <input type="number" id="plazo" placeholder="Ingrese el plazo (en años)">
+        <br>
+
+        <button onclick="calcularCuota()">Calcular cuota</button>
+
+            <div id="resultado"></div>
+
+    </div>
+<body>
+    
+</body>
+</html>
